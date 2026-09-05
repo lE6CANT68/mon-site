@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Mes Projets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-200 flex flex-col min-h-screen">
+    
+    <header class="bg-gray-900 text-white text-center py-4 text-3xl font-extrabold tracking-widest uppercase">
+        Cantin Fanger
+    </header>
+    <nav class="bg-gray-800 text-gray-300 shadow-md z-10">
+        <div class="max-w-7xl mx-auto px-4 flex justify-center space-x-10 py-3 font-semibold text-sm uppercase tracking-wide">
+            <a href="index.html" class="hover:text-white transition duration-200">Accueil</a>
+            <a href="parcours.html" class="hover:text-white transition duration-200">Mon Parcours</a>
+            <a href="projets.html" class="text-white">Mes projets</a>
+            <a href="contact.html" class="hover:text-white transition duration-200">Contact</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-6xl mx-auto px-6 py-20 w-full">
+        <h2 class="text-3xl font-extrabold text-gray-900 mb-12 text-center">Mes Projets</h2>
+        
+        <div class="grid md:grid-cols-2 gap-10">
+            
+            <!-- PROJET 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+                <div class="w-full h-56 bg-gray-900 flex items-center justify-center border-b border-gray-200">
+                    <img src="./Gif_NSMB.gif" alt="Démo IA Mario" class="w-full h-full object-contain">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">IA Bot - Whack-a-Mole</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">Création d'un agent automatisé jouant à un mini-jeu Nintendo DS en temps réel. Entraînement d'un CNN avec TensorFlow.</p>
+                    <div class="flex gap-2 flex-wrap font-mono text-xs font-bold text-indigo-600 mb-4">
+                        <span class="bg-indigo-50 px-2 py-1 rounded">Python</span>
+                        <span class="bg-indigo-50 px-2 py-1 rounded">TensorFlow</span>
+                        <span class="bg-indigo-50 px-2 py-1 rounded">OpenCV</span>
+                    </div>
+                    <a href="https://github.com/lE6CANT68/nsmb-ds-whack-a-mole-ai" target="_blank" class="text-gray-900 font-bold hover:text-indigo-600 transition mt-auto">Voir sur GitHub &rarr;</a>
+                </div>
+            </div>
+
+            <!-- PROJET 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+                <div class="w-full h-56 bg-gray-900 flex items-center justify-center border-b border-gray-200">
+                    <img src="./Gif_Drone.gif" alt="Démo Drone 3D" class="w-full h-full object-contain">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">UAV Visual Localization 3D</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">Moteur 3D interactif permettant de corréler des images satellites avec des données télémétriques de drones.</p>
+                    <div class="flex gap-2 flex-wrap font-mono text-xs font-bold text-indigo-600 mb-4">
+                        <span class="bg-indigo-50 px-2 py-1 rounded">C++</span>
+                        <span class="bg-indigo-50 px-2 py-1 rounded">OpenGL</span>
+                        <span class="bg-indigo-50 px-2 py-1 rounded">FreeGLUT</span>
+                    </div>
+                    <a href="https://github.com/lE6CANT68/uav-visual-localization-3d" target="_blank" class="text-gray-900 font-bold hover:text-indigo-600 transition mt-auto">Voir sur GitHub &rarr;</a>
+                </div>
+            </div>
+
+            <!-- PROJET 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+                <div class="w-full h-56 bg-gray-900 flex items-center justify-center border-b border-gray-200">
+                    <img src="./Gif_Voiture.gif" alt="Démo Simulateur V2V" class="w-full h-full object-contain">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Simulateur de Trafic & Connexions V2V</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">
+                        Développement d'un simulateur de trafic routier et de connexions "Vehicle-to-Vehicle". 
+                        L'application parse des données OpenStreetMap (OSM) pour générer un graphe routier et simule en temps réel le comportement de plusieurs milliers de véhicules. 
+                        Implémentation d'un algorithme de "Spatial Hashing" pour optimiser le calcul continu du graphe d'interférences.
+                    </p>
+                    <div class="flex gap-2 flex-wrap font-mono text-xs font-bold text-indigo-600 mb-4">
+                        <span class="bg-indigo-50 px-2 py-1 rounded">C++</span>
+                        <span class="bg-indigo-50 px-2 py-1 rounded">Qt Framework</span>
+                        <span class="bg-indigo-50 px-2 py-1 rounded">OpenGL</span>
+                        <span class="bg-indigo-50 px-2 py-1 rounded">Algorithmique</span>
+                    </div>
+                    <a href="https://github.com/lE6CANT68" target="_blank" class="text-gray-900 font-bold hover:text-indigo-600 transition mt-auto">Voir sur GitHub &rarr;</a>
+                </div>
+            </div>
+
+            <!-- PROJET 4 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+                <div class="w-full h-56 bg-gray-900 flex items-center justify-center border-b border-gray-200">
+                    <img src="./Gif_EchecChaos.gif" alt="Démo Échecs Chaos" class="w-full h-full object-contain">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Échecs Chaos (Moteur C++ & IA)</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">
+                        Projet de fin de Master : création d'un moteur d'échecs "from scratch" intégrant des mécaniques rogue-like (cartes tactiques, événements aléatoires). 
+                        Intégration native de l'API Gemini permettant de dicter des règles en langage naturel en cours de partie et de générer une analyse pédagogique (FEN) des erreurs du joueur.
+                    </p>
+                    <div class="flex gap-2 flex-wrap font-mono text-xs font-bold text-indigo-600 mb-4">
+                        <span class="bg-indigo-50 px-2 py-1 rounded">C++17</span>
+                        <span class="bg-indigo-50 px-2 py-1 rounded">Raylib</span>
+                        <span class="bg-indigo-50 px-2 py-1 rounded">API LLM</span>
+                        <span class="bg-indigo-50 px-2 py-1 rounded">CMake</span>
+                    </div>
+                    <a href="https://github.com/lE6CANT68/EchecsChaos" target="_blank" class="text-gray-900 font-bold hover:text-indigo-600 transition mt-auto">Voir sur GitHub &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 text-center py-6 mt-auto">
+        <p>&copy; 2026 - Cantin Fanger</p>
+    </footer>
+
+</body>
+</html>
